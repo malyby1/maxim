@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+</head>
+<body> 
+    <form class="form" method="POST" action="https://digital-spectr.com/ac/academy.php">
+        <p class="form__header">Задать вопрос</p>
+        <input
+            class="form__input decor"
+            type="text"
+            name="name"
+            pattern="^[А-Яа-яЁё\s]+$"
+            placeholder="Фамилия Имя Отчество *" 
+            required
+        >
+        <input
+            class="form__input decor" 
+            type="tel"
+            name="phone"
+            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+            placeholder="Телефон *" 
+            required
+        >
+        <input
+            class="form__input decor" 
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+        >
+        <button  class="form__button decor" type="submit">отправить запрос</button>
+    </form>
+</body>
+</html>
