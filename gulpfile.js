@@ -5,7 +5,7 @@ const gulp = require('gulp'),
       autoprefixer = require('gulp-autoprefixer'),
       del = require('del'),
       cleanCSS =  require('gulp-clean-css'),
-      bs = require('browser-sync').create(),
+      bs = require('browser-sync').create();
 
 gulp.task('styles', function() {
     return gulp.src('dev/*.less')
